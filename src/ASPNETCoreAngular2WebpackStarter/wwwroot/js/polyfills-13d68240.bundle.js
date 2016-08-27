@@ -76,7 +76,7 @@
 /******/ 			script.charset = 'utf-8';
 /******/ 			script.async = true;
 /******/
-/******/ 			script.src = __webpack_require__.p + "" + chunkId + ".js/" + ({"0":"app","2":"vendor"}[chunkId]||chunkId) + "-" + "7eb7f162" + ".bundle.js";
+/******/ 			script.src = __webpack_require__.p + "" + chunkId + ".js/" + ({"0":"app","2":"vendor"}[chunkId]||chunkId) + "-" + "13d68240" + ".bundle.js";
 /******/ 			head.appendChild(script);
 /******/ 		}
 /******/ 	};
@@ -9104,13 +9104,13 @@
 	
 	/***/ }
 	/******/ ]);
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 692)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/_git/ASPNET-Core-Angular2-Webpack-StarterTemplate/src/ASPNETCoreAngular2WebpackStarter/~/process/browser.js */ 692)))
 
 /***/ },
 /* 692 */
-/*!******************************!*\
-  !*** ./~/process/browser.js ***!
-  \******************************/
+/*!**********************************************************************************************************************!*\
+  !*** C:/_git/ASPNET-Core-Angular2-Webpack-StarterTemplate/src/ASPNETCoreAngular2WebpackStarter/~/process/browser.js ***!
+  \**********************************************************************************************************************/
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -9277,4 +9277,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=polyfills-7eb7f162.bundle.js.map
+//# sourceMappingURL=polyfills-13d68240.bundle.js.map

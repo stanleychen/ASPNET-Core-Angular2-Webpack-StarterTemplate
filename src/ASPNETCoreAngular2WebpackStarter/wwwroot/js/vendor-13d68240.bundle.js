@@ -13795,9 +13795,9 @@ webpackJsonp([2],[
 
 /***/ },
 /* 72 */
-/*!***********************************!*\
-  !*** (webpack)/buildin/module.js ***!
-  \***********************************/
+/*!*************************************!*\
+  !*** ./~/webpack/buildin/module.js ***!
+  \*************************************/
 /***/ function(module, exports) {
 
 	module.exports = function(module) {
@@ -69056,13 +69056,13 @@ webpackJsonp([2],[
 	exports.ImmediateDefinition = ImmediateDefinition;
 	exports.Immediate = new ImmediateDefinition(root_1.root);
 	//# sourceMappingURL=Immediate.js.map
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/timers-browserify/main.js */ 867).clearImmediate, __webpack_require__(/*! ./~/timers-browserify/main.js */ 867).setImmediate))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/_git/ASPNET-Core-Angular2-Webpack-StarterTemplate/src/ASPNETCoreAngular2WebpackStarter/~/timers-browserify/main.js */ 867).clearImmediate, __webpack_require__(/*! C:/_git/ASPNET-Core-Angular2-Webpack-StarterTemplate/src/ASPNETCoreAngular2WebpackStarter/~/timers-browserify/main.js */ 867).setImmediate))
 
 /***/ },
 /* 867 */
-/*!*************************************!*\
-  !*** ./~/timers-browserify/main.js ***!
-  \*************************************/
+/*!*****************************************************************************************************************************!*\
+  !*** C:/_git/ASPNET-Core-Angular2-Webpack-StarterTemplate/src/ASPNETCoreAngular2WebpackStarter/~/timers-browserify/main.js ***!
+  \*****************************************************************************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(setImmediate, clearImmediate) {var nextTick = __webpack_require__(/*! process/browser.js */ 692).nextTick;
@@ -69141,7 +69141,7 @@ webpackJsonp([2],[
 	exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate : function(id) {
 	  delete immediateIds[id];
 	};
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/timers-browserify/main.js */ 867).setImmediate, __webpack_require__(/*! ./~/timers-browserify/main.js */ 867).clearImmediate))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/_git/ASPNET-Core-Angular2-Webpack-StarterTemplate/src/ASPNETCoreAngular2WebpackStarter/~/timers-browserify/main.js */ 867).setImmediate, __webpack_require__(/*! C:/_git/ASPNET-Core-Angular2-Webpack-StarterTemplate/src/ASPNETCoreAngular2WebpackStarter/~/timers-browserify/main.js */ 867).clearImmediate))
 
 /***/ },
 /* 868 */
@@ -84661,4 +84661,4 @@ webpackJsonp([2],[
 
 /***/ }
 ]);
-//# sourceMappingURL=vendor-7eb7f162.bundle.js.map
+//# sourceMappingURL=vendor-13d68240.bundle.js.map
