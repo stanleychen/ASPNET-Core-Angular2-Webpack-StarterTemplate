@@ -1,6 +1,6 @@
-# Angular 2 // Webpack // ASP.NET CORE 1.0 Starter Template
+# Angular 2 // Webpack // ASP.NET CORE WebAPI Starter Template
 
-This is a starter template for developing Angular2 with ASP.NET Core 1.0 Applications using webpack for bundling. It has the webpack dev server included as well as css styles in webpack, hashes for your files, automatic injection into the index.html etc.
+This is a starter template for developing Angular2 with ASP.NET Core WebAPI Applications using webpack for bundling. It has the webpack dev server included as well as css styles in webpack, hashes for your files, automatic injection into the index.html etc.
 
 This template is an Angular2 application with an http-service getting values from an ASP.NET CORE WebAPI.
 
