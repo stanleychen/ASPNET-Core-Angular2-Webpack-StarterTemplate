@@ -46,7 +46,10 @@ module.exports = {
         }),
         new CleanWebpackPlugin(
             [
-                "./wwwroot/**"
+                "./wwwroot/js/",
+                "./wwwroot/css/",
+                "./wwwroot/assets/",
+                "./wwwroot/index.html"
             ]
         ),
         // inject in index.html
