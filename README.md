@@ -14,17 +14,19 @@ This template is an Angular2 application with an http-service getting values fro
 
 Start by typing
 
-`npm install`
+`npm start`
 
-at the level of the "package.json" file
+at the level of the "package.json" file and browser to 
 
-### Option 1 (Frontend and backend running)
+`localhost:8080`
+
+### Option 2 (Frontend and backend running)
 
 Now you can just press "play" inside Visual Studio to get started.
 
 If you change the *.ts-files you need to run the `tsc` command manually.
 
-### Option 2 (Only frontend is running)
+### Option 3 (Only frontend is running)
 
 `npm run startWebpackDevServer` will run the webpack dev server. After this you can browse to 
 
@@ -34,9 +36,9 @@ and see the page working. You can do changes to the application and they will be
 
 ![alt text](_gitAssets/9f561485-c6e6-44cc-acde-03eb29822a1b.jpg "Screenshot")
 
-### Option 3 (frontend and backend running)
+### Option 4 (frontend and backend running)
 
-You can type `npm run build` and browse to `localhost:5000` to see the page. This will trigger an webpack build and an `dotnet run`.
+You can type `npm run build` and browse to `localhost:5000` to see the page. This will trigger an webpack build and an `dotnet run`. Changes will not automatically appear in the browser.
 
 ![alt text](_gitAssets/e86cea01-b880-4eae-9a81-df6af6180ca2.jpg "Screenshot")
 

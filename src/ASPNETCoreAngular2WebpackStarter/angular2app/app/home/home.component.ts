@@ -1,11 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { CORE_DIRECTIVES } from '@angular/common';
 import { DataService } from '../services/DataService';
 
 @Component({
     selector: 'home',
     template: require('./home.component.html'),
-    directives: [CORE_DIRECTIVES],
     providers:[DataService]
 })
 

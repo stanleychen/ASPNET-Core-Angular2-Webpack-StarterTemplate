@@ -1,13 +1,10 @@
-﻿using System.IO;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 
-namespace ASPNETCoreRC2Angular2Demo
+namespace ASPNETCoreAngular2Demo
 {
     public class Startup
     {
@@ -17,6 +14,14 @@ namespace ASPNETCoreRC2Angular2Demo
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllOrigins",
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+                    });
+            });
             services.AddMvc();
         }
 
@@ -38,6 +43,7 @@ namespace ASPNETCoreRC2Angular2Demo
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
+            app.UseCors("AllowAllOrigins");
             app.UseDefaultFiles();
             app.UseStaticFiles();
 
