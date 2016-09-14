@@ -14,14 +14,7 @@ namespace ASPNETCoreAngular2Demo
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors(options =>
-            {
-                options.AddPolicy("AllowAllOrigins",
-                    builder =>
-                    {
-                        builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
-                    });
-            });
+            services.AddCors();
             services.AddMvc();
         }
 
@@ -43,7 +36,11 @@ namespace ASPNETCoreAngular2Demo
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            app.UseCors("AllowAllOrigins");
+             app.UseCors(config =>
+                config.AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowAnyOrigin());
+                    
             app.UseDefaultFiles();
             app.UseStaticFiles();
 
