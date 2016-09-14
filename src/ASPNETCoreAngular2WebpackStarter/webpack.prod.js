@@ -14,7 +14,7 @@ module.exports = {
     },
     output: {
         path: "./wwwroot",
-        filename: "[name]-[hash:8].bundle.js"
+        filename: "js/[name]-[hash:8].bundle.js"
     },
 
     module: {
@@ -40,7 +40,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin("[name].bundle.css"),
+        new ExtractTextPlugin("css/[name].bundle.css"),
         new webpack.optimize.CommonsChunkPlugin({
             name: ["app", "vendor", "polyfills"]
         }),
