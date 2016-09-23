@@ -47,4 +47,4 @@ var DataService = (function () {
     return DataService;
 }());
 exports.DataService = DataService;
-//# sourceMappingURL=DataService.js.map
+//# sourceMappingURL=dataService.js.map
