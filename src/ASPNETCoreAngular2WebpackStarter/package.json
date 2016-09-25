@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "license": "MIT",
     "scripts": {
-        "start": "tsc && npm install && concurrently \"tsc -w\" \"dotnet run\" \"npm run startWebpackDevServer\" ",
+        "start": "tsc && npm install && npm run build && concurrently \"tsc -w\" \"dotnet run\" \"npm run startWebpackDevServer\" ",
         "startWebpackDevServer": "webpack-dev-server --inline --progress --port 8080",
         "build": "SET NODE_ENV=development && webpack -d --color && dotnet run",
         "buildProduction": "SET NODE_ENV=production && webpack -d --color",

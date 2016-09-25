@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var DataService_1 = require('../services/DataService');
+var DataService_1 = require('../../services/DataService');
 var HomeComponent = (function () {
     function HomeComponent(_dataService) {
         this._dataService = _dataService;
@@ -19,13 +19,15 @@ var HomeComponent = (function () {
         var _this = this;
         this._dataService
             .GetAll()
-            .subscribe(function (data) { return _this.values = data; }, function (error) { return console.log(error); }, function () { return console.log('Get all complete'); });
+            .subscribe(function (data) { return _this.values = data; }, function (error) { return console.log(error); }, function () {
+            console.log("Complete");
+        });
     };
     HomeComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'home',
-            template: require('./home.component.html'),
-            providers: [DataService_1.DataService]
+            templateUrl: './home.component.html'
         }), 
         __metadata('design:paramtypes', [DataService_1.DataService])
     ], HomeComponent);

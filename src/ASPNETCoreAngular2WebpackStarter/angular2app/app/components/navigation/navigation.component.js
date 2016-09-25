@@ -9,20 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AboutComponent = (function () {
-    function AboutComponent() {
-        this.message = "Hello from About";
+var NavigationComponent = (function () {
+    function NavigationComponent() {
     }
-    AboutComponent.prototype.ngOnInit = function () {
-    };
-    AboutComponent = __decorate([
+    NavigationComponent = __decorate([
         core_1.Component({
-            selector: 'about',
-            template: require('./about.component.html')
+            moduleId: module.id,
+            selector: 'starterTemplateNavigation',
+            templateUrl: './navigation.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AboutComponent);
-    return AboutComponent;
+    ], NavigationComponent);
+    return NavigationComponent;
 }());
-exports.AboutComponent = AboutComponent;
-//# sourceMappingURL=about.component.js.map
+exports.NavigationComponent = NavigationComponent;
+//# sourceMappingURL=navigation.component.js.map
