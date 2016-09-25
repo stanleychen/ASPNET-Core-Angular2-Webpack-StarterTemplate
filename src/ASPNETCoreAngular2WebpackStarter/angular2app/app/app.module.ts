@@ -12,12 +12,15 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 
 import { DataService } from './services/DataService';
 
+import { ToasterModule } from 'angular2-toaster/angular2-toaster'
+
 @NgModule({
     imports: [
         BrowserModule,
         routing,
         HttpModule,
-        JsonpModule
+        JsonpModule,
+        ToasterModule
     ],
 
     declarations: [
