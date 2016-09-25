@@ -16,9 +16,9 @@ Start by typing
 
 `npm start`
 
-at the level of the "package.json" file and browser to 
+at the level of the "package.json" file and browse to 
 
-`localhost:8080`
+`localhost:5000`
 
 ### Option 2 (Frontend and backend running)
 

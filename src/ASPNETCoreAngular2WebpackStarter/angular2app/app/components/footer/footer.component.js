@@ -14,9 +14,8 @@ var FooterComponent = (function () {
     }
     FooterComponent = __decorate([
         core_1.Component({
-            moduleId: module.id,
             selector: 'starterTemplateFooter',
-            templateUrl: './footer.component.html'
+            template: require('./footer.component.html')
         }), 
         __metadata('design:paramtypes', [])
     ], FooterComponent);
