@@ -1,36 +1,13 @@
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">ASPNETCoreAngular2WebpackStarter</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a routerLink="/" class="btn">Home</a></li>
-
-                <li><a routerLink="/about" class="btn">About</a></li>
-            </ul>
-        </div>
-        <!--/.nav-collapse -->
-    </div>
-</nav>
+<starterTemplateNavigation></starterTemplateNavigation>
 
 <div class="container">
     <div class="starter-template">
+        <toaster-container></toaster-container>
         <router-outlet></router-outlet>
 
         <hr>
 
-        <footer>
-            <p>&copy; 2016 <a href="http://offering.solutions">Offering.Solutions</a> |
-                <a href="https://twitter.com/FabianGosebrink">Fabian Gosebrink Twitter</a></p>
-        </footer>
+        <starterTemplateFooter></starterTemplateFooter>
     </div>
 </div>
 <!-- /.container -->

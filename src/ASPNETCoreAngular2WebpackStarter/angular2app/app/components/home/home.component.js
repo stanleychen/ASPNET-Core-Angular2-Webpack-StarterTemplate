@@ -9,25 +9,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var DataService_1 = require('../services/DataService');
+var DataService_1 = require('../../services/DataService');
+var angular2_toaster_1 = require('angular2-toaster/angular2-toaster');
 var HomeComponent = (function () {
-    function HomeComponent(_dataService) {
+    function HomeComponent(_dataService, _toasterService) {
         this._dataService = _dataService;
+        this._toasterService = _toasterService;
         this.message = "Hello from HomeComponent constructor";
     }
     HomeComponent.prototype.ngOnInit = function () {
         var _this = this;
         this._dataService
             .GetAll()
-            .subscribe(function (data) { return _this.values = data; }, function (error) { return console.log(error); }, function () { return console.log('Get all complete'); });
+            .subscribe(function (data) { return _this.values = data; }, function (error) { return function (response) {
+            _this._toasterService.pop('error', 'Damn', 'Something went wrong...');
+        }; }, function () {
+            _this._toasterService.pop('success', 'Complete', 'Getting all values complete');
+        });
     };
     HomeComponent = __decorate([
         core_1.Component({
             selector: 'home',
-            template: require('./home.component.html'),
-            providers: [DataService_1.DataService]
+            template: require('./home.component.html')
         }), 
-        __metadata('design:paramtypes', [DataService_1.DataService])
+        __metadata('design:paramtypes', [DataService_1.DataService, angular2_toaster_1.ToasterService])
     ], HomeComponent);
     return HomeComponent;
 }());
