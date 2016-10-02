@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json.Serialization;
 
 namespace ASPNETCoreAngular2Demo
 {
@@ -15,7 +16,8 @@ namespace ASPNETCoreAngular2Demo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
-            services.AddMvc();
+            services.AddMvcCore()
+                .AddJsonFormatters(options => options.ContractResolver = new CamelCasePropertyNamesContractResolver());
         }
 
         public Startup(IHostingEnvironment env)
