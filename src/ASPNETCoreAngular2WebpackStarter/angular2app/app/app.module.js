@@ -20,6 +20,7 @@ var footer_component_1 = require('./components/footer/footer.component');
 var navigation_component_1 = require('./components/navigation/navigation.component');
 var DataService_1 = require('./services/DataService');
 var angular2_toaster_1 = require('angular2-toaster/angular2-toaster');
+var ng2_slim_loading_bar_1 = require('ng2-slim-loading-bar');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -30,7 +31,8 @@ var AppModule = (function () {
                 app_routes_1.routing,
                 http_1.HttpModule,
                 http_1.JsonpModule,
-                angular2_toaster_1.ToasterModule
+                angular2_toaster_1.ToasterModule,
+                ng2_slim_loading_bar_1.SlimLoadingBarModule.forRoot()
             ],
             declarations: [
                 app_component_1.AppComponent,
