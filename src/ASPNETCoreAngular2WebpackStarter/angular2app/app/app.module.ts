@@ -13,6 +13,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { DataService } from './services/DataService';
 
 import { ToasterModule } from 'angular2-toaster/angular2-toaster'
+import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
 
 @NgModule({
     imports: [
@@ -20,7 +21,8 @@ import { ToasterModule } from 'angular2-toaster/angular2-toaster'
         routing,
         HttpModule,
         JsonpModule,
-        ToasterModule
+        ToasterModule,
+        SlimLoadingBarModule.forRoot()
     ],
 
     declarations: [
