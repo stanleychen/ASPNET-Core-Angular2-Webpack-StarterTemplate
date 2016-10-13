@@ -9,7 +9,7 @@ webpackJsonp([0],{
 	"use strict";
 	var platform_browser_dynamic_1 = __webpack_require__(/*! @angular/platform-browser-dynamic */ 1);
 	var app_module_1 = __webpack_require__(/*! ./app.module */ 23);
-	__webpack_require__(/*! ../styles/custom.css */ 82);
+	__webpack_require__(/*! ../styles/custom.css */ 83);
 	platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1.AppModule);
 
 
@@ -36,13 +36,13 @@ webpackJsonp([0],{
 	var app_component_1 = __webpack_require__(/*! ./app.component */ 24);
 	var app_constants_1 = __webpack_require__(/*! ./app.constants */ 26);
 	var app_routes_1 = __webpack_require__(/*! ./app.routes */ 27);
-	var http_1 = __webpack_require__(/*! @angular/http */ 60);
-	var home_component_1 = __webpack_require__(/*! ./components/home/home.component */ 58);
-	var about_component_1 = __webpack_require__(/*! ./components/about/about.component */ 76);
-	var footer_component_1 = __webpack_require__(/*! ./components/footer/footer.component */ 78);
-	var navigation_component_1 = __webpack_require__(/*! ./components/navigation/navigation.component */ 80);
-	var DataService_1 = __webpack_require__(/*! ./services/DataService */ 59);
-	var angular2_toaster_1 = __webpack_require__(/*! angular2-toaster/angular2-toaster */ 62);
+	var http_1 = __webpack_require__(/*! @angular/http */ 62);
+	var home_component_1 = __webpack_require__(/*! ./components/home/home.component */ 60);
+	var about_component_1 = __webpack_require__(/*! ./components/about/about.component */ 77);
+	var footer_component_1 = __webpack_require__(/*! ./components/footer/footer.component */ 79);
+	var navigation_component_1 = __webpack_require__(/*! ./components/navigation/navigation.component */ 81);
+	var DataService_1 = __webpack_require__(/*! ./services/DataService */ 61);
+	var angular2_toaster_1 = __webpack_require__(/*! angular2-toaster/angular2-toaster */ 64);
 	var AppModule = (function () {
 	    function AppModule() {
 	    }
@@ -164,8 +164,8 @@ webpackJsonp([0],{
 
 	"use strict";
 	var router_1 = __webpack_require__(/*! @angular/router */ 28);
-	var home_component_1 = __webpack_require__(/*! ./components/home/home.component */ 58);
-	var about_component_1 = __webpack_require__(/*! ./components/about/about.component */ 76);
+	var home_component_1 = __webpack_require__(/*! ./components/home/home.component */ 60);
+	var about_component_1 = __webpack_require__(/*! ./components/about/about.component */ 77);
 	var appRoutes = [
 	    { path: '', redirectTo: '/home', pathMatch: 'full' },
 	    { path: 'home', component: home_component_1.HomeComponent },
@@ -177,7 +177,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 58:
+/***/ 60:
 /*!***********************************************************!*\
   !*** ./angular2App/app/components/home/home.component.ts ***!
   \***********************************************************/
@@ -194,8 +194,8 @@ webpackJsonp([0],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(/*! @angular/core */ 3);
-	var DataService_1 = __webpack_require__(/*! ../../services/DataService */ 59);
-	var angular2_toaster_1 = __webpack_require__(/*! angular2-toaster/angular2-toaster */ 62);
+	var DataService_1 = __webpack_require__(/*! ../../services/DataService */ 61);
+	var angular2_toaster_1 = __webpack_require__(/*! angular2-toaster/angular2-toaster */ 64);
 	var HomeComponent = (function () {
 	    function HomeComponent(_dataService, _toasterService) {
 	        this._dataService = _dataService;
@@ -215,7 +215,7 @@ webpackJsonp([0],{
 	    HomeComponent = __decorate([
 	        core_1.Component({
 	            selector: 'home',
-	            template: __webpack_require__(/*! ./home.component.html */ 75)
+	            template: __webpack_require__(/*! ./home.component.html */ 76)
 	        }), 
 	        __metadata('design:paramtypes', [DataService_1.DataService, angular2_toaster_1.ToasterService])
 	    ], HomeComponent);
@@ -226,7 +226,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 59:
+/***/ 61:
 /*!*************************************************!*\
   !*** ./angular2App/app/services/DataService.ts ***!
   \*************************************************/
@@ -243,8 +243,8 @@ webpackJsonp([0],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(/*! @angular/core */ 3);
-	var http_1 = __webpack_require__(/*! @angular/http */ 60);
-	__webpack_require__(/*! rxjs/add/operator/map */ 61);
+	var http_1 = __webpack_require__(/*! @angular/http */ 62);
+	__webpack_require__(/*! rxjs/add/operator/map */ 63);
 	var app_constants_1 = __webpack_require__(/*! ../app.constants */ 26);
 	var DataService = (function () {
 	    function DataService(_http, _configuration) {
@@ -285,7 +285,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 75:
+/***/ 76:
 /*!*************************************************************!*\
   !*** ./angular2App/app/components/home/home.component.html ***!
   \*************************************************************/
@@ -295,7 +295,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 76:
+/***/ 77:
 /*!*************************************************************!*\
   !*** ./angular2App/app/components/about/about.component.ts ***!
   \*************************************************************/
@@ -321,7 +321,7 @@ webpackJsonp([0],{
 	    AboutComponent = __decorate([
 	        core_1.Component({
 	            selector: 'about',
-	            template: __webpack_require__(/*! ./about.component.html */ 77)
+	            template: __webpack_require__(/*! ./about.component.html */ 78)
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], AboutComponent);
@@ -332,7 +332,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 77:
+/***/ 78:
 /*!***************************************************************!*\
   !*** ./angular2App/app/components/about/about.component.html ***!
   \***************************************************************/
@@ -342,7 +342,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 78:
+/***/ 79:
 /*!***************************************************************!*\
   !*** ./angular2App/app/components/footer/footer.component.ts ***!
   \***************************************************************/
@@ -365,7 +365,7 @@ webpackJsonp([0],{
 	    FooterComponent = __decorate([
 	        core_1.Component({
 	            selector: 'starterTemplateFooter',
-	            template: __webpack_require__(/*! ./footer.component.html */ 79)
+	            template: __webpack_require__(/*! ./footer.component.html */ 80)
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], FooterComponent);
@@ -376,7 +376,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 79:
+/***/ 80:
 /*!*****************************************************************!*\
   !*** ./angular2App/app/components/footer/footer.component.html ***!
   \*****************************************************************/
@@ -386,7 +386,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 80:
+/***/ 81:
 /*!***********************************************************************!*\
   !*** ./angular2App/app/components/navigation/navigation.component.ts ***!
   \***********************************************************************/
@@ -409,7 +409,7 @@ webpackJsonp([0],{
 	    NavigationComponent = __decorate([
 	        core_1.Component({
 	            selector: 'starterTemplateNavigation',
-	            template: __webpack_require__(/*! ./navigation.component.html */ 81)
+	            template: __webpack_require__(/*! ./navigation.component.html */ 82)
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], NavigationComponent);
@@ -420,7 +420,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 81:
+/***/ 82:
 /*!*************************************************************************!*\
   !*** ./angular2App/app/components/navigation/navigation.component.html ***!
   \*************************************************************************/
@@ -430,7 +430,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 82:
+/***/ 83:
 /*!***************************************!*\
   !*** ./angular2App/styles/custom.css ***!
   \***************************************/
@@ -441,4 +441,4 @@ webpackJsonp([0],{
 /***/ }
 
 });
-//# sourceMappingURL=app-4b71f6fb.bundle.js.map
+//# sourceMappingURL=app-2a785ba7.bundle.js.map
